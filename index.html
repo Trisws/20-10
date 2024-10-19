@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" type="text/javascript"></script>
+    <title>Happy Woman's day 20/10</title>
+    <style>
+        /* Thêm tiền tố -webkit- để đảm bảo tương thích trên Safari */
+        .flower__leaf, .flower__line__leaf, .leaf {
+            -webkit-animation: grow 5s ease-in-out infinite;
+            animation: grow 5s ease-in-out infinite;
+        }
+
+        /* Chuyển động mượt mà hơn với Safari */
+        @-webkit-keyframes grow {
+            0% { -webkit-transform: scale(0); transform: scale(0); }
+            100% { -webkit-transform: scale(1); transform: scale(1); }
+        }
+
+        @keyframes grow {
+            0% { -webkit-transform: scale(0); transform: scale(0); }
+            100% { -webkit-transform: scale(1); transform: scale(1); }
+        }
+
+        .flower__g-front__leaf-wrapper {
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Đảm bảo rằng các thuộc tính gradient và transform có tiền tố webkit */
+        .flower__leafs--1, .flower__leafs--2, .flower__leafs--3 {
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+
+        .flower__light {
+            -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+        }
+    </style>
+</head>
+    
+<body class="not-loaded">
+    <div class="night"></div>
+    <div class="happy-woman-day">𝓗𝓪𝓹𝓹𝔂 𝔀𝓸𝓶𝓮𝓷'𝓼 𝓭𝓪𝔂 2️⃣0️⃣/1️⃣0️⃣</div>
+    <div class="flowers">
+        <!-- Nội dung hoa và cỏ vẫn giữ nguyên, chỉ thay đổi các thuộc tính CSS liên quan -->
+
+        <div class="flower flower--1">
+            <div class="flower__leafs flower__leafs--1">
+                <div class="flower__leaf flower__leaf--1"></div>
+                <div class="flower__leaf flower__leaf--2"></div>
+                <div class="flower__leaf flower__leaf--3"></div>
+                <div class="flower__leaf flower__leaf--4"></div>
+                <div class="flower__white-circle"></div>
+
+                <div class="flower__light flower__light--1"></div>
+                <div class="flower__light flower__light--2"></div>
+                <div class="flower__light flower__light--3"></div>
+                <div class="flower__light flower__light--4"></div>
+                <div class="flower__light flower__light--5"></div>
+                <div class="flower__light flower__light--6"></div>
+                <div class="flower__light flower__light--7"></div>
+                <div class="flower__light flower__light--8"></div>
+
+            </div>
+            <div class="flower__line">
+                <div class="flower__line__leaf flower__line__leaf--1"></div>
+                <div class="flower__line__leaf flower__line__leaf--2"></div>
+                <div class="flower__line__leaf flower__line__leaf--3"></div>
+                <div class="flower__line__leaf flower__line__leaf--4"></div>
+                <div class="flower__line__leaf flower__line__leaf--5"></div>
+                <div class="flower__line__leaf flower__line__leaf--6"></div>
+            </div>
+        </div>
+        <!-- Lặp lại cho các hoa khác -->
+    </div>
+</body>
+</html>
